@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        div{
+            position: relative;
+
+            width: 100%;
+            height: 100vh;
+            
+        }
+
+        .um{
+            width: 400px;
+            height: 400px;
+
+            background-color: rgb(175, 116, 43);
+            position: absolute;
+
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            
+        }
+
+        .dois{  
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 250px;
+        }
+
+        .flutuante{
+            width: 300px;
+            height: 300px;
+
+            margin: 20px;
+
+            float: right;
+            background-color: blue;
+            /* display: none; */
+        }
+
+        .tres{
+            background-color: red;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+        }
+
+        img{
+            width: 50%;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            
+                <div class="um">
+                    <img src="imagens/equipe.jpg" alt="" class="dois">
+                </div>
+
+                <div class="flutuante"> </div>
+
+                <div class="tres">
+                    <picture>
+                        <img src="imagens/perfil1.jpg" alt="">
+                    </picture>
+                </div>
+           
+        </div>
+    </main>
+    
+</body>
+</html>

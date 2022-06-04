@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* overflow: auto; */
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #e9edeb4c;
+    
+}
+
+header {
+    background-color: #19A6B3;
+    color: white;
+    padding: 50px;
+}
+
+header h1 {
+    text-align: center;
+    
+}
+
+nav {
+    background-color: #093A3E;
+    color:white;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+nav li {
+    display: inline-block;
+    padding: 20px 10px;
+    color: white;
+}
+
+nav a {
+    
+    font-weight: bold;
+    margin: 0px 5px;
+    
+}
+
+nav li:hover {
+    background-color: #0F636B;
+    color: orange;
+    
+}
+
+.login {
+    float: right;
+    margin-right: 15px;
+}
+
+div.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 20px;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    float: left;
+    width: 75%;
+    
+}
+
+.botao:hover {
+    background-color: #0f636bc2;
+}
+
+.card {
+    background-color: rgba(228, 226, 226, 0.732);
+   
+    padding: 20px;
+    margin-top: 20px;
+    
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.137);
+}
+
+.redondo {
+    width: 75%;
+    border: 1px solid rgba(0, 0, 0, 0.353);
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / 15%);
+
+    display: block;
+    margin: auto;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding: 20px 0px;
+    color: black;
+}
+
+article {
+  margin: 0px 20px;
+}
+
+article > a {
+    display: block;
+}
+
+.botao {
+    font-weight: bold;
+    font-size: 12px;
+    width: 12%;
+    text-indent: 0;
+    border: 1px solid black;
+    background-color: #0f636b69;
+    border-radius: 5px;
+
+    display: inline-block;
+}
+
+button{
+    background-color: #0f636b69;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+div p {
+    text-indent: 30px;
+    padding: 25px 0px;
+}
+
+aside {
+    width: 25%;
+    height: 100vh;
+    display: table;
+    float: right;
+    margin-top: 20px;
+    background-color: rgba(228, 226, 226, 0.732);
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.137);
+
+}
+
+aside h3, a {
+    margin: 15px;
+    color: black;
+}
+
+h3 {
+    text-align: center;
+}
+
+aside a:hover {
+    color: rgb(255, 153, 0);
+}
+
+aside p {
+    /* padding: 10px 0px; */
+    /* margin-bottom: 10px; */
+}
+
+.cardright {
+    width: 85%;
+    margin: auto;
+    display: block;
+
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / 15%);
+    
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #19a6b3be;
+
+    width: 100%;
+    height: auto;
+
+    text-align: center;
+}
+
+footer p {
+    padding: 35px;
+    color: black;
+}
+
+@media screen and (max-width: 985px) {
+    aside p {
+        text-align: center;
+        text-indent: 0;
+    }
+
+    
+}
+
+@media screen and (max-width: 750px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+         
+     }
+
+     aside {
+        width: 50%;
+        height: auto;
+        display: inline-block;
+        margin-top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+        float: none;
+        /* overflow: auto; */
+        background-color: rgba(228, 226, 226, 0.732);
+        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.137);
+    
+    }
+
+    aside p{
+    }
+    
+}
