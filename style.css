@@ -209,6 +209,7 @@ footer p {
         width: 100%;
          
      }
+   
 
      aside {
         width: 50%;
@@ -225,7 +226,8 @@ footer p {
     
     }
 
-    aside p{
+    .cardright{
+        width: 170px;
     }
     
 }
