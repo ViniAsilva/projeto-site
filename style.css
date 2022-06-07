@@ -20,6 +20,7 @@ header {
 }
 
 header h1 {
+    font-size: 3em;
     text-align: center;
     
 }
@@ -82,12 +83,22 @@ section {
 }
 
 .card {
+    /* background-color: rgba(228, 226, 226, 0.732);*/
+   
+    /* padding: 20px; */
+    /* margin-top: 20px; */
+    
+    /* box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.137); */
+}
+
+.maincont {
     background-color: rgba(228, 226, 226, 0.732);
    
     padding: 20px;
-    margin-top: 20px;
+    margin: 20px;
     
     box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.137);
+
 }
 
 .redondo {
@@ -141,13 +152,20 @@ div p {
 
 aside {
     width: 25%;
-    height: 100vh;
+    height: unset;
     display: table;
     float: right;
+    /* margin-top: 20px; */
+    /* background-color: rgba(228, 226, 226, 0.732); */
+    /* box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.137); */
+
+}
+
+.aside {
     margin-top: 20px;
     background-color: rgba(228, 226, 226, 0.732);
     box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.137);
-
+    padding: 20px 0;
 }
 
 aside h3, a {
@@ -196,6 +214,27 @@ footer p {
     aside p {
         text-align: center;
         text-indent: 0;
+        
+    }
+
+    .card {
+        padding: 0;
+        margin: 0;
+    }
+
+    div.row {
+        padding: 0;
+        margin: 0;
+    }
+
+    .maincont {
+        margin: 20px 20;
+        padding: 10px 10px;
+        
+    }
+
+    .maincont img {
+        width: 100%;
     }
 
     
@@ -207,25 +246,49 @@ footer p {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin: 0;
+        padding: 0;
          
      }
 
      aside {
-        width: 50%;
+        width: 77%;
         height: auto;
-        display: inline-block;
-        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* margin-top: 20px; */
         left: 50%;
         transform: translateX(-50%);
         position: relative;
-        float: none;
+        /* float: none; */
         /* overflow: auto; */
-        background-color: rgba(228, 226, 226, 0.732);
-        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.137);
+        /* background-color: rgba(228, 226, 226, 0.732); */
+        /* box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.137); */
     
     }
 
-    aside p{
+    .card {
+        padding: 0;
+        margin: 0;
     }
+
+    div.row {
+        padding: 0;
+        margin: 0;
+    }
+
+    .maincont {
+        margin: 20px 0;
+        padding: 10px 10px;
+        
+    }
+
+    .maincont img {
+        width: 100%;
+    }
+
+   
     
 }
